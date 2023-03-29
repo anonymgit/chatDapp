@@ -11,7 +11,7 @@ import images from "../../assets";
 const NavBar = () => {
   const menuItems = [
     {
-      menu: "All Users",
+      menu: "ALL USERS",
       link: "alluser",
     },
     {
@@ -24,14 +24,6 @@ const NavBar = () => {
     },
     {
       menu: "SETTING",
-      link: "/",
-    },
-    {
-      menu: "FAQS",
-      link: "/",
-    },
-    {
-      menu: "TERMS OF USE",
       link: "/",
     },
   ];
@@ -132,13 +124,13 @@ const NavBar = () => {
 
       {/* MODEL COMPONENT */}
       {openModel && (
-        <div className={Style.modelBox}>
+        <div className={Style.modelBox }>
           <Model
             openBox={setOpenModel}
-            title="WELCOME TO"
-            head="CHAT BUDDY"
-            info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime assumenda exercitationem voluptatibus, vero aliquid in tempore aut, impedit dolores voluptate recusandae nulla fuga? Praesentium iusto mollitia sint fugit! Placeat?"
-            smallInfo="Kindley seclet your name..."
+            title="Welcome To "
+            head="HeyChat"
+            info="❝ 𝘈 𝘋𝘦𝘤𝘦𝘯𝘵𝘳𝘢𝘭𝘪𝘻𝘦𝘥 𝘢𝘳𝘤𝘩𝘪𝘵𝘦𝘤𝘵𝘶𝘳𝘦 𝘸𝘪𝘵𝘩 𝘶𝘴𝘦𝘳 𝘢𝘶𝘵𝘩𝘦𝘯𝘵𝘪𝘤𝘢𝘵𝘪𝘰𝘯 𝘢𝘯𝘥 𝘦𝘯𝘥-𝘵𝘰-𝘦𝘯𝘥 𝘦𝘯𝘤𝘳𝘺𝘱𝘵𝘪𝘰𝘯 𝘸𝘩𝘪𝘤𝘩 𝘨𝘪𝘷𝘦𝘴 𝘪𝘮𝘮𝘶𝘵𝘢𝘣𝘭𝘦 𝘤𝘩𝘢𝘵 𝘩𝘪𝘴𝘵𝘰𝘳𝘺.❞"
+            
             image={images.hero}
             functionName={createAccount}
             address={account}

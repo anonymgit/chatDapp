@@ -6,7 +6,7 @@ import Style from "./Model.module.css";
 import images from "../../assets";
 import { ChatAppContect } from "../../Context/ChatAppContext";
 import { Loader } from "../../Components/index";
-
+import { NavBar } from "../../Components/index";
 const Model = ({
   openBox,
   title,
@@ -23,6 +23,8 @@ const Model = ({
 
   const { loading } = useContext(ChatAppContect);
   return (
+    <>
+  
     <div className={Style.Model}>
       <div className={Style.Model_box}>
         <div className={Style.Model_box_left}>
@@ -48,7 +50,7 @@ const Model = ({
                 />
                 <input
                   type="text"
-                  placeholder="your name"
+                  placeholder="Enter Name"
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -56,7 +58,7 @@ const Model = ({
                 <Image src={images.account} alt="user" width={30} height={30} />
                 <input
                   type="text"
-                  placeholder={address || "Enter address.."}
+                  placeholder={"Enter Address"}
                   onChange={(e) => setAccountAddress(e.target.value)}
                 />
               </div>
@@ -73,7 +75,7 @@ const Model = ({
                   {""}
                   <Image src={images.close} alt="send" width={30} height={30} />
                   {""}
-                  Cancle
+                  Cancel
                 </button>
               </div>
             </div>
@@ -81,6 +83,7 @@ const Model = ({
         </div>
       </div>
     </div>
+    </>
   );
 };
 

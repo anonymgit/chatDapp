@@ -1,7 +1,7 @@
 
 .Chat{
     padding: 2rem;
-    background-color: rgba(0,0,0,0.25);
+    background-color: whitesmoke;
     border-radius: .5rem;
     overflow-y: scroll;
 }
@@ -44,7 +44,7 @@
     outline: none;
     border: none;
     padding: 1rem;
-    color: #f18203;
+    color: black;
     border-radius: .5rem;
 }
 
@@ -53,6 +53,7 @@
     align-items: center;
     gap: 2rem;
     line-height: 1;
+    border-bottom:2px solid #f1820342;
 }
 
 .Chat_user_info_box h4,

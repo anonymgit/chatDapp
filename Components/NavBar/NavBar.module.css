@@ -10,7 +10,10 @@
     grid-template-columns: 1fr 1.7fr;
     align-items: center;
     gap: 2rem;
+    border-bottom:2px solid #f1820342;
+    padding-bottom: .4rem;
 }
+
 
 .NavBar_box_right{
     display: flex;
@@ -27,8 +30,8 @@
 }
 
 .active_btn{
-    color:  #F18303;
-    border-bottom: 2px solid #F18303;
+    color:  black;
+    border-bottom: 2px solid #f1820342;
     padding-bottom: .4rem;
 }
 
@@ -38,12 +41,12 @@
 }
 
 .NavBar_box_right_connect button{
-    background-color: rgba(0,0,0, 0.25);
+    background-color: white;
     padding: 1rem;
     border: none;
     border-radius: .5rem;
     font-size: 1.1rem;
-    color: #F18303;
+    color: black;
     font-weight: 700;
     cursor: pointer;
 
@@ -51,6 +54,9 @@
     align-items: center;
     gap: .5rem;
 }
+.NavBar_box_right_connect button:hover {
+    background-color: grey;
+  }
 
 .NavBar_box_right_close{
     display: none;
@@ -67,7 +73,7 @@
 .modelBox{
     position: fixed;
     inset: 0 0 0 0;
-    background-color: #292F3F;
+    background-color: white;
     z-index: 77777777;
 }
 
@@ -107,7 +113,7 @@
         display: block;
         position: fixed;
         z-index: 1111111;
-        background-color: #292F3F;
+        background-color: #3e4457;
         inset:  0 0 0 0;
        text-align: center;
        padding-top: 4rem;

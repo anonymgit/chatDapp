@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 //INTRNAL IMPORT
 import { UserCard } from "../Components/index";
 import Style from "../styles/alluser.module.css";
